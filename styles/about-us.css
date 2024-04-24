@@ -1,0 +1,187 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*TOP BANNER*/
+#top-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100vw;
+    padding-bottom: 1rem;
+    background-color: rgb(0, 0, 0);
+}
+#navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 850px;
+    padding: .5rem .3rem 2rem .3rem;
+}
+#back-button{
+    position: relative;
+    left: 0;
+}
+
+#main-logo{
+    max-width: 800px;
+}
+
+#main-page{
+    max-width: 100vw;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    background-color: rgb(0,0,0);
+    padding: .8rem 1.5rem;
+}
+#main-page h2{
+    color: rgb(240, 240, 240);
+    font-size: 1.5rem;
+    text-align: start;
+    font-weight: 900;
+    font-family: "Noto Sans", sans-serif;
+}
+#main-page h3{
+    color: rgb(240, 240, 240);
+    font-size: 1.5rem;
+    text-align: start;
+    font-weight: 900;
+    font-family: "Noto Sans", sans-serif;
+}
+#main-page p{
+    max-width: 800px;
+    color: rgb(202, 202, 202);
+    font-family: "Noto Sans", sans-serif;
+
+}
+
+li{
+    color: rgb(202, 202, 202);
+    list-style: none;
+}
+p{
+    text-align: center;
+}
+#contacts-linktree{
+    background-color: #00E1A2;
+    color: rgb(20, 20, 20);
+    padding: .5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-family: "Space Mono", monospace;
+    font-optical-sizing: auto;
+    text-decoration: none;
+    text-align: center;
+}
+#contacts-instagram{
+    background-color: rgb(248,122,92);
+    color: rgb(20, 20, 20);
+    padding: .5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-family: "Space Mono", monospace;
+    font-optical-sizing: auto;
+    text-decoration: none;
+    text-align: center;
+}
+#contacts-twitter{
+    background-color: rgb(253,218,55);
+    color: rgb(20, 20, 20);
+    padding: .5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-family: "Space Mono", monospace;
+    font-optical-sizing: auto;
+    text-decoration: none;
+    text-align: center;
+}
+#contacts-facebook{
+    background-color: #48D7FB;
+    color: rgb(20, 20, 20);
+    padding: .5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-family: "Space Mono", monospace;
+    font-optical-sizing: auto;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/*FOOTER CSS*/
+
+#footer{
+    background-color: #262626;
+    max-width: 100vw;
+    width: 100%;
+    color: aliceblue;
+
+}
+#container{
+    padding: 1.5rem;
+    max-width: 900px;
+}
+#footer-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 0.9rem;;
+}
+#footer img{
+    width: 100%;
+    height:auto;
+    max-width: 250px;
+}
+#footer h6{
+    font-size: 1rem;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 900;
+}
+#footer a{
+    text-decoration: none transparent;
+    color: aliceblue;
+    font-family: "Noto Sans", sans-serif;
+}
+#footer a:hover{
+    text-decoration: underline #db652b 0.15rem;
+    transition: 300ms;
+}
+#copyright{
+    background-color: black;
+    color: grey;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;    
+    position: relative;
+
+    bottom: 0;
+    font-family: "Noto Sans", sans-serif;
+}
+
+#bottom-image-container{
+    max-width: 970px;
+    padding-bottom: 3rem;
+}
+#bottom-image-container-inner{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: .5rem .5rem ;
+}
+#bottom-images{
+    background-color: transparent;
+    border: transparent solid 4px;
+    border-radius: 10px;
+}
+#bottom-images img{
+    width: 100%;
+    max-height: 200px;
+}

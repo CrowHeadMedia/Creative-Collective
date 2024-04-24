@@ -1,0 +1,124 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*TOP BANNER*/
+#top-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100vw;
+    padding-bottom: 1rem;
+    background-color: rgb(0, 0, 0);
+}
+#navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 850px;
+    padding: .5rem .3rem 2rem .3rem;
+}
+#back-button{
+    position: relative;
+    left: 0;
+}
+#creative-collective-logo{
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* MAIN PAGE */
+#main-page{
+    max-width: 100vw;
+    display: flex;
+    flex-direction:column ;
+    background-color: rgb(0,0,0);
+    padding: .8rem 1.5rem;
+}
+#main-page h1{
+    color: rgb(240, 240, 240);
+    font-size: 3.5rem;
+    text-align: start;
+    font-family: "Noto Sans", sans-serif;
+}
+#main-page h2{
+    color: rgb(240, 240, 240);
+    font-size: 1.5rem;
+    text-align: start;
+    font-family: "Noto Sans", sans-serif;
+}
+#main-page h3{
+    color: rgb(240, 240, 240);
+    font-size: 1.2rem;
+    text-align: start;
+    font-family: "Noto Sans", sans-serif;
+}
+#main-page p{
+    max-width: 800px;
+    color: rgb(202, 202, 202);
+    font-family: "Noto Sans", sans-serif;
+
+}
+#top-para{
+    border-top: #848484 solid 2px;
+    padding: 1rem 0 0 0;
+}
+
+
+
+/*FOOTER CSS*/
+
+#footer{
+    background-color: #262626;
+    max-width: 100vw;
+    width: 100%;
+    color: aliceblue;
+
+}
+#container{
+    padding: 1.5rem;
+    max-width: 900px;
+}
+#footer-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 0.9rem;;
+}
+#footer img{
+    width: 100%;
+    height:auto;
+    max-width: 250px;
+}
+#footer h6{
+    font-size: 1rem;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 900;
+}
+#footer a{
+    text-decoration: none transparent;
+    color: aliceblue;
+    font-family: "Noto Sans", sans-serif;
+}
+#footer a:hover{
+    text-decoration: underline #db652b 0.15rem;
+    transition: 300ms;
+}
+#copyright{
+    background-color: black;
+    color: grey;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;    
+    position: relative;
+
+    bottom: 0;
+    font-family: "Noto Sans", sans-serif;
+}

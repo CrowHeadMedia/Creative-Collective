@@ -1,0 +1,200 @@
+html, body{
+  background-color: rgb(21, 21, 21) !important;
+}
+
+marquee{
+  color: aliceblue;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  margin-top: 6px;
+}
+marquee span { 
+  display: inline-block; 
+  white-space: nowrap; 
+  animation: 10s linear infinite; 
+}
+
+#main-container{
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+
+
+/*FIRST BOX - with logo and buttons*/
+#gridbox-info{
+  color: aliceblue;
+  background-color: transparent; 
+  display: flex;
+  justify-content: space-between;
+  max-width:500px;
+  padding: 0;
+}
+#button{
+  background-color: transparent !important;
+  color: aliceblue !important;
+  font-family: "Noto Sans", sans-serif;
+  width: 100%;
+  border: solid 1px white;
+  border-radius: 20px ;
+  text-decoration: none;
+  padding: .2rem 1rem;
+  margin-top: .5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color:  rgb(230, 230, 230);
+  border: rgb(21, 21, 21) solid 7px;
+  border-radius: 20px;
+
+  color: rgb(21, 21, 21);
+  text-decoration: none;
+  padding: 0.6rem 0rem;
+}
+#gridbox{
+  max-width:500px;
+  display: flex;
+  justify-content: space-around;
+ 
+}
+
+#profile-container{
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* person */
+#profile-person{
+  background-color: rgb(202, 202, 202);
+  width: 58%;
+  max-height: 100%;
+  border-radius: 15px;
+}
+#profile-person img{
+  max-height: auto;
+  max-width: 100%;
+}
+
+/* items */
+#profile-item-container{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#item-1{
+  background-color: rgb(202, 202, 202);
+  width: 100%;
+  height: 48%;
+  border-radius: 15px;
+}
+#item-1 img{
+  width: 100%;
+}
+#item-2{
+  background-color: rgb(202, 202, 202);
+  width: 100%;
+  height: 48%;
+  border-radius: 15px;
+}
+
+/* text */
+a h3{
+  margin-top: 5px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 850;
+  margin-bottom: 5px;
+}
+a h4{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+#gridbox-info h2{
+  text-align: start;
+  padding-left: 1rem;
+}
+#button-o{
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: rgb(169, 169, 169);
+  height: 20%;
+  text-align: center;
+  border:rgb(93, 94, 95) solid 2px ;
+  border-radius: 50px;
+  padding: .5rem 1rem;
+  margin-top: .2rem;
+}
+
+/*MEDIA QUERIES*/
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 1001px) {
+marquee{
+  font-size: 1.1rem;
+}
+#button{
+  font-size: 1.4rem;
+}
+#text-container h3{
+  font-size: 1.1rem;
+}
+#text-container h4{
+  font-size: 0.8rem;
+}
+#button-o{
+  font-size: 1rem;
+}
+
+}
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 1000px) {
+  marquee{
+    font-size: 1.6rem;
+  }
+  #button{
+    font-size: 1.3rem;
+  }
+  #text-container h3{
+    font-size: 1rem;
+  }
+  #text-container h4{
+    font-size: 0.7rem;
+  }
+  #button-o{
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 770px) {
+  marquee{
+    font-size: 1.1rem;
+  }
+  #button{
+    font-size: 1.5rem;
+  }
+  #text-container h3{
+    font-size: 1.3rem;
+  }
+  #text-container h4{
+    font-size: 1rem;
+  }
+  #button-o{
+    font-size: 1.4rem;
+  }
+}

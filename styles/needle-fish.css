@@ -1,0 +1,452 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*TOP BANNER*/
+#top-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100vw;
+    background-color: rgb(245,238,226);
+    padding-bottom: 1rem;
+
+}
+#logo{
+    width: 80vw;
+    max-width: 500px;
+    height: auto;
+}
+#top-banner h2{
+    padding-top: 1rem;
+    font-family: "Noticia Text", serif;
+    font-weight: 800;
+    color: #2C221A;
+    text-align: center;
+    text-decoration: #2C221A88 underline overline;
+    text-underline-offset: 10px;
+}
+#top-banner h3{
+    padding-top: .3rem;
+    font-family: "Noticia Text", serif;
+    font-weight: 600;
+    color: #2C221A;
+    text-align: center;
+}
+ 
+#navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 850px;
+    padding: .5rem .3rem 2rem .3rem;
+}
+#back-button{
+    position: relative;
+    left: 0;
+}
+#creative-collective-logo{
+    flex-grow: 1;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* MAIN PAGE */
+
+#main-page{
+    max-width: 100vw;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items:center;
+    background-color: rgb(245,238,226);
+    padding: 0 .6rem;
+}
+#summary-and-images{
+    max-width: 1000px;
+}
+
+
+
+
+
+
+
+/*CAROUSEL*/
+#images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+}
+#main-image-container{
+    max-width: 900px;
+    margin-top: .5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-top:#2C221A88 double 10px;
+    border-bottom: #2C221A88 double 10px;
+}
+#main-image-container-inner{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#main-images{
+    width: 100%;
+}
+#cotw{
+    width: 100%;
+    font-family: "Rye", serif;
+    font-style: italic;
+    border-bottom: #2C221A88 double 10px;
+}
+
+  /* Hide the images by default */
+  .main-image {
+    display: none;
+  }
+
+
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    width: auto;
+    padding: 4px 10px;
+    color: rgb(16, 16, 16);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    text-decoration: none;
+  }
+  
+  .arrows{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    color: #b71e1e;
+  }
+  
+  /* Number text (1/3 etc) */
+  .number-text {
+    color: #0d0c0c;
+    font-family: "Noticia Text", serif;
+    font-size: 1rem;
+    padding: .3rem;
+    position: relative;
+    top: 0;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+
+
+
+  
+
+/* PERSONAL SUMMARY */
+
+#personal-summary{
+    display: flex;
+    flex-direction:column;
+    text-align: start;
+    align-items: start;
+    border-radius: 10px;
+    max-width: 700px;
+    padding: .6rem .5rem;
+    border: #2c221a88 dashed 4px;
+}
+#personal-summary h4{
+    font-family: "Rye", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: italic;
+    color: #2C221A;
+    padding: 0;
+    margin: 0;
+}
+#personal-summary p{
+    padding: 0rem 1rem .8rem 1rem;
+    font-weight: 100;
+    font-family: "Noticia text", serif;
+    font-optical-sizing: auto;
+    color: #2C221A;
+    border-bottom: #2C221A88 solid 4px;
+}
+#personal-summary a{
+    text-align: center;
+    background-color: #2C221A;
+    color: rgb(245,238,226);
+    width: 100%;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.1rem;
+    font-family: "Noticia Text", serif;
+    text-transform: uppercase;
+    font-optical-sizing: auto;
+    text-decoration: rgb(245,238,226);
+    text-underline-offset: 4px;
+    transition:.5s ease;
+}
+#personal-summary a:hover{
+    text-decoration: #ffffff wavy underline;
+}
+
+/* ------------------------------*/ 
+/*CONTACTS & FACTS*/
+#contacts-facts-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem 0 1rem 0;
+    max-width: 970px;
+    padding: 2rem 0 ;
+    border: #2C221A88 dashed 4px;
+    border-radius: 10px;
+}
+#contacts-facts-container-inner{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    color: #2C221A;
+}
+#fun-facts{
+    font-family: "Noticia Text", serif;
+    font-size: 1.3rem;
+    padding: 0 1rem ;
+}
+#fun-facts h4{
+    font-size: 2.5rem;
+    font-family: "Rye", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    color: #2C221A;
+    padding: 1rem 0;
+    margin: 0;
+}
+#contacts {
+    font-family: "Noticia Text", serif;
+    font-size: 1.3rem;
+
+}
+#contacts h4{
+    font-size: 2.5rem;
+    font-family: "Rye", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    color: #2C221A;
+    padding: 1rem 1.9rem;
+    margin: 0;
+}
+#contacts ul{
+    list-style-type: none;
+    padding: 0;
+}
+#contacts li{
+    padding: .5rem 0;
+}
+#contacts a{
+    text-decoration: none;
+    color: #2C221A;
+    text-decoration: rgb(245,238,226) wavy underline;
+    text-underline-offset: 5px;
+    transition: 6ms ease;
+    text-wrap: wrap;
+}
+#contacts a:hover{
+    text-decoration: #2C221A wavy underline;
+}
+
+#bottom-image-container{
+    max-width: 970px;
+    padding-bottom: 3rem;
+}
+#bottom-image-container-inner{
+    display: flex;
+    align-items: center;
+    border: #2C221A88 dashed 4px;
+    border-radius: 10px;
+    padding: .5rem .5rem ;
+}
+#bottom-images{
+    background-color: #2c1f1a;
+    border: rgb(245,238,226) solid 4px;
+    border-radius: 10px;
+}
+#bottom-images img{
+    width: 100%;
+    max-height: 200px;
+}
+
+
+
+
+
+/*MEDIA QUERIES*/
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    #top-banner h2{
+        font-size: 1.7rem;
+    }
+    #top-banner h3{
+        font-size: 1.5rem
+    }
+    #personal-summary h4 {
+      font-size: 4rem;
+    }
+    #personal-summary p{
+        font-size: 1.1rem;
+    }
+    #personal-summary a{
+        font-size: 1.5rem;
+    }
+    #cotw{
+        font-size: 2.2rem;
+    }
+    #creative-collective-logo img{
+        height: 32px;        
+    }  
+    #thumbnail-images{
+        width: 20%;
+    }
+    #fun-facts{
+        border-right: #2C221A88 solid 4px;
+    }
+  }
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    #top-banner h1{
+        font-size: 3rem;
+    }
+    #top-banner h2{
+        font-size: 1.2rem;
+    }
+    #top-banner h3{
+        font-size: 1.2rem
+    }
+    #personal-summary h4 {
+        font-size: 3rem;
+    }
+    #personal-summary p{
+        font-size: 1rem;
+    }
+    #personal-summary a{
+        font-size: 1.2rem;
+    }
+    #cotw{
+        font-size: 2.4rem;
+    }
+    #creative-collective-logo img{
+        height: 25px;        
+    }
+    #thumbnail-images{
+        width: 95%;
+    }
+    #fun-facts{
+        border-bottom: #2C221A88 solid 4px;
+    }
+}
+@media screen and (max-width: 300px) {
+    #top-banner h2{
+        font-size: .9rem;
+    }
+    #top-banner h3{
+        font-size: .8rem;
+    }
+    #personal-summary h4 {
+        font-size: 2.5rem;
+    }
+    #cotw{
+        font-size: 1.6rem;
+    }
+    #personal-summary p{
+        font-size: 1rem;
+    }
+    #creative-collective-logo img{
+        height: 20px;        
+    }
+
+
+    
+}
+/*FOOTER CSS*/
+
+#footer{
+    background-color: #2c1f1a;
+    max-width: 100vw;
+    color: rgb(245,238,226);
+
+}
+#container{
+    padding: 1.5rem;
+    max-width: 900px;
+}
+#footer-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 0.9rem;;
+}
+#footer img{
+    width: 100%;
+    height:auto;
+    max-width: 250px;
+}
+#footer h6{
+    font-size: 1rem;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 900;
+}
+#footer a{
+    text-decoration: none transparent;
+    color: rgb(245,238,226);
+    font-family: "Noto Sans", sans-serif;
+}
+#footer a:hover{
+    text-decoration: underline rgb(245,238,226) 0.15rem;
+    transition: 300ms;
+}
+#copyright{
+    background-color: rgb(8, 5, 4);
+    color: grey;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;    
+    position: relative;
+
+    bottom: 0;
+    font-family: "Noto Sans", sans-serif;
+}
